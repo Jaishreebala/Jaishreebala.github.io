@@ -1,0 +1,95 @@
+body{
+    /*background-image: url("https://aaronsummers.files.wordpress.com/2011/04/pastel_plasma_colors.jpg")*/
+   /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPKlgtBXTGdsOAxh3BSVWtGu9KicBvCWpk_YdEKjwT6YJCdKaFYQ")*/
+    background-image: url("https://backgrounddownload.com/wp-content/uploads/2018/09/watercolour-background-1.jpg");
+    
+    font-size: 16px;
+   
+}
+#line{
+    color:green; 
+    font-size:30px;
+    background-color: hsl(150, 100%, 85%); 
+    width: 75%;
+}
+
+#line1{
+    color:green; 
+    font-size:20px;
+    background-color: hsl(150, 100%, 85%); 
+    width: 75%;
+}
+
+.trying{
+    background-color: hsl(150, 100%, 85%); 
+    font-size: 40px; 
+    width: 75%;
+    padding: 20px 0px;
+}
+.trying1{
+    background-color: hsl(30, 50%, 70%); 
+    font-size: 37px; 
+    width: 70%;
+}
+
+
+
+.magic{
+    background-image: url("https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/3117853/580/580/m1/fpnw/wm1/1607.m00.i101.n021.p.c25.179331677-space-w-.jpg?1502726817&s=f9edd4e149c0676041f55e15dc8cdbbe");
+    color:white;
+    font-size: 35px;
+    font-family: 'Mountains of Christmas', cursive;
+    width: 300px;
+    padding: 5px 0px;
+    text-align: center;
+    border: 5px solid rgb(178, 205, 221);
+    border-radius: 30px;
+}
+
+.magic:hover{
+    background-image: url("https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/3117853/580/580/m1/fpnw/wm1/1607.m00.i101.n021.p.c25.179331677-space-w-.jpg?1502726817&s=f9edd4e149c0676041f55e15dc8cdbbe");
+    color:beige;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Mountains of Christmas', cursive;
+    width: 300px;
+    padding: 5px 0px;
+    text-align: center;
+    border: 5px solid rgb(178, 205, 221);
+    border-radius: 30px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#light{
+    height: 400px;
+    width: 400px;
+    font-size: 30px; 
+background-color: white;
+    opacity:0.5;
+}
+
+
+
+.dark{
+    height: 400px;
+    width: 400px;
+    font-size: 30px; 
+    background-image: url("https://66.media.tumblr.com/fd87f028cc629be853a00ec487cf2781/tumblr_ohu8g2AxRV1vr75k3o1_400.jpg");
+    background-color: red;
+    opacity:0.5;
+}
+
+footer{
+    background-color: beige;
+    height: auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    font-size: 1rem;
+    text-align:right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 1;
+  }
+  
