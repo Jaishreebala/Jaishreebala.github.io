@@ -3,6 +3,7 @@ body, html {
     height: 100%;
     margin: 0;
     font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   body{
@@ -15,52 +16,126 @@ body, html {
   height: 100%;  
 }
     
-a{
+/*a{
     text-decoration: none !important;
-}
+}*/
 .toppane {
     width: 100%;
-    height: 50%;
     border-collapse: collapse;
     position: fixed;
     z-index: 2;
   }
 
-  .header {
-    background: url("https://78.media.tumblr.com/26be1dff725ec3f0789d6c9a89049ddd/tumblr_op3e1p9dKP1vsboz2o1_500.jpg")  ;
-    height: 45%;
-    /*background-size: cover; */
-    text-transform: uppercase;
-    /*background-color:hsl(30, 50%, 65%);*/
+
+
+.nav{
+  text-align: right;
+  margin-right: 10px;
+  background-color: #f1f1f1;
+}
+
+.nav a, .selected {
+  font-size: 1.25rem;
+  display: inline;
+  color: black;
+  margin-right: 5px;
+  padding: 2px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 0, 0);
+
+}
+.selected{
+  font-size: 1.5rem;
+  text-decoration: underline;
+  text-decoration-color:blue ;
+}
+
+.nav a:hover{
+  font-size: 1.5rem;
 
 }
 
-/* maybe delete 
-.header .container {
-    position: relative;
-    padding-top:30px;
-    font-size: 6.25rem;
-    color:#000;
-    text-align: left;
-}*/
+.bottompanes{
+  padding-top: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-.nav { 
-    background: rgba(255, 176, 176, 0.4);
-    color: hsl(240, 50%, 70%);
-    height: 22.7%; 
-    width: 150px;
-    margin-top: 1%;
-  
-  }
-  
-
-.selected, .nav:hover, a:hover {
-    background: maroon;
-    cursor: pointer; 
-    color: #fff;
-    transition: background .5s;  
-    height: 22.7%; 
+.leftpane{
+  float: left;
   width: 50%;
-  margin-top: 1%;
-  
+  font-size: 1.2rem;
+  margin-left: 10px;
+
+}
+
+.middlepane{
+  width: 25%;
+  float: left;
+  font-size: 1.2rem;
+  padding: 45px 0;
+
+}
+
+
+.rightpane{
+  float: right;
+  width: 20%;
+}
+
+.rightpane img{
+  width: 100%;
+}
+
+
+
+.square {
+  width: 200px;
+  height: 200px;
+  font-size: 1rem;
+  color: #000;
+  text-align: center;
+  background: hsla(0, 0%, 100%, 0.555);
+  display: inline-flex;
+  margin: 10px 10px 0 10px ;
+  padding: 10px;
+}
+
+.square:hover{
+  font-size: 1.1rem;
+  background: hsla(240, 23%, 57%, 0.555);
+  color: white;
+}
+
+
+a{
+  text-decoration: none;
+}
+.images{
+width: 75%;
+display: inline-flex;
+
+}
+
+
+.images img{
+  width: 400px;
+  height: 300px;
+  margin: 10px ;
+  display: inline-flex;
+
+}
+
+
+footer{
+  background-color: beige;
+  height: auto;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  font-size: 1rem;
+  text-align:right;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  opacity: 1;
 }

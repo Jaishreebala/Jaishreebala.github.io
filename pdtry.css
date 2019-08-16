@@ -1,0 +1,261 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  body{
+    /* background-color: hsl(240, 50%, 10%); */
+    background: hsl(240, 50%, 90%);
+    }
+    
+.container {
+  width: 100%;
+  height: 100%;  
+}
+    
+/*a{
+    text-decoration: none !important;
+}*/
+.toppane {
+    width: 100%;
+    border-collapse: collapse;
+    position: fixed;
+    z-index: 2;
+  }
+
+
+
+.nav{
+  text-align: right;
+  margin-right: 10px;
+  background-color: #f1f1f1;
+}
+
+.nav a, .selected {
+  font-size: 1.25rem;
+  display: inline;
+  color: black;
+  margin-right: 5px;
+  padding: 2px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 0, 0);
+
+}
+.selected{
+  font-size: 1.5rem;
+  text-decoration: underline;
+  text-decoration-color:blue ;
+}
+
+.nav a:hover{
+  font-size: 1.5rem;
+
+}
+
+
+
+
+.box{
+    padding-top: 50px;  
+
+    color: #000;
+    position: relative;
+    width: 99%;
+    background: hsl(240, 50%, 80%);
+    margin: 0 auto;
+    height: auto;
+    opacity: 0.99;
+  
+  }
+  
+  
+  /* collapsibles*/
+  .collapsible {
+  background-color: hsl(271, 15%, 54%);
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1rem;
+  z-index: 1;
+  position: relative;
+  margin-bottom: 10px;
+  }
+  
+  .active, .collapsible:hover {
+  background-color: hsl(271, 15%, 30%);
+  color: #fff;
+  
+  }
+  
+  .content, .contentx, .contenty {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: hsl(30, 50%, 70%);;
+  z-index: 1;
+  color: black;
+  }
+  
+  .collapsible:after {
+  content: '\02C5';
+  color: white;
+  float: right;
+  margin-left: 2%;
+  
+  }
+  
+  .active:after {
+  content: '\02C4'
+  }
+  
+  .leftpane {
+  width: 33%;
+  height: 100%;
+  float: left;
+  border-collapse: collapse;
+  margin-right: 2%;
+  height: 40rem;
+  overflow: scroll;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  color: hsl(239, 100%, 34%);
+  }
+  .dash{
+  list-style: square;
+  }
+  .middlepane {
+  font-family: 'Courier New', Courier, monospace;
+  width: 30%;
+  height: 100%;
+  float: left;
+  border-collapse: collapse;
+  height: 40rem;
+  overflow: scroll;
+  
+  font-weight: 400;
+  font-size: 1rem;
+  }
+  
+  .rightpane {
+  width: 35%;
+  font-family: 'Courier New', Courier, monospace;
+  height: 100%;
+  position: relative;
+  float: left;
+  border-collapse: collapse;
+  margin: 0;
+  height: 40rem;
+  overflow: scroll;
+  /*color: hsl(270, 100%, 50%);*/
+  font-weight: 400;
+  font-size: 1rem;
+  
+  }
+  
+  
+  footer{
+    background-color: beige;
+    height: auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    font-size: 1rem;
+    text-align:right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 1;
+  }  
+  
+  
+  
+  @media only screen and (max-width:1050px) and (min-width: 750px){
+    
+    .leftpane {
+      width: 47%;
+      height: 100%;
+      float: left;
+      border-collapse: collapse;
+      margin-right: 2%;
+      height: 40rem;
+      overflow: scroll;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1rem;
+      color: hsl(239, 100%, 34%);
+    }
+    .middlepane {
+      font-family: 'Courier New', Courier, monospace;
+      width: 50%;
+      height: 100%;
+      border-collapse: collapse;
+      height: 40rem;
+      overflow: scroll;
+    
+      font-weight: 400;
+      font-size: 1rem;
+    }
+    .rightpane {
+      width: 75%;
+      font-family: 'Courier New', Courier, monospace;
+      height: 100%;
+      position: relative;
+      float: center;
+      border-collapse: collapse;
+      margin: 0;
+      height: 40rem;
+      overflow: scroll;
+      /*color: hsl(270, 100%, 50%);*/
+      font-weight: 400;
+      font-size: 1rem;
+      
+      }
+    
+    }
+    
+    @media only screen and (max-width:750px){
+      .leftpane {
+        width: 100%;
+        height: 100%;
+        float: left;
+        border-collapse: collapse;
+        margin-right: 2%;
+        height: 40rem;
+        overflow: scroll;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1rem;
+        color: hsl(239, 100%, 34%);
+      }
+      .middlepane {
+        font-family: 'Courier New', Courier, monospace;
+        width: 100%;
+        height: 100%;
+        border-collapse: collapse;
+        height: 40rem;
+        overflow: scroll;
+      float: left;
+        font-weight: 400;
+        font-size: 1rem;
+      }
+      .rightpane {
+        width: 100%;
+        font-family: 'Courier New', Courier, monospace;
+        height: 100%;
+        position: relative;
+        float: left;
+        border-collapse: collapse;
+        margin: 0;
+        height: 40rem;
+        overflow: scroll;
+        /*color: hsl(270, 100%, 50%);*/
+        font-weight: 400;
+        font-size: 1rem;
+        
+        }
+    }
