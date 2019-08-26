@@ -9,25 +9,19 @@ body{
 #line{
     color:green; 
     font-size:30px;
-    background-color: hsl(150, 100%, 85%); 
     width: 75%;
 }
 
-#line1{
-    color:green; 
-    font-size:20px;
-    background-color: hsl(150, 100%, 85%); 
-    width: 75%;
-}
+
 
 .trying{
-    background-color: hsl(150, 100%, 85%); 
+    background-color: hsla(150, 100%, 85%, 0.39);
     font-size: 40px; 
     width: 75%;
     padding: 20px 0px;
 }
 .trying1{
-    background-color: hsl(30, 50%, 70%); 
+    background-color: hsla(30, 50%, 70%, 0.39); 
     font-size: 37px; 
     width: 70%;
 }
@@ -92,4 +86,109 @@ footer{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     opacity: 1;
   }
+
+.day{
+    font-family:'ink free', 'comic sans MS', sans-serif; 
+    text-align:center; 
+    font-size: 25px;  
+    background-color:yellow; 
+    padding:18px 50px;
+    text-decoration: none;
+
+  }
+ .day:hover{
+    font-family:'ink free', 'comic sans MS', sans-serif; 
+    text-align:center; 
+    font-size: 30px;  
+    background-color:hsla(0, 0%, 0%, 0.3); 
+    color: hsl(60, 100%, 50%);
+    padding:18px 50px;
+    text-decoration: none;
+ }
+
+ .night{
+    font-family:'ink free', 'comic sans MS', sans-serif; 
+    font-size: 25px;
+     background-color:black;
+      color:white; 
+      padding:18px 40px;
+      text-decoration: none;
+      text-align:center; 
+
+ }
+ .night:hover{
+    font-family:'ink free', 'comic sans MS', sans-serif; 
+    font-size: 27px;
+     background-color:hsla(0, 0%, 100%, 0.5);
+      color:black; 
+      padding:18px 40px;
+      text-decoration: none;
+      text-align:center; 
+
+ }
+  /* MEDIA QUERRIES */
   
+  @media only screen and (max-width:1480px) and (min-width: 950px){
+
+    #line{
+        color:green; 
+        font-size:25px;
+        width: 75%;
+    }
+    
+    .trying{
+        background-color: hsla(150, 100%, 85%, 0.39);
+        font-size: 35px; 
+        width: 75%;
+        padding: 20px 0px;
+    }
+    .trying1{
+        background-color: hsl(30, 50%, 70%, 0.39); 
+        font-size: 32px; 
+        width: 70%;
+    }
+  }
+
+@media only screen and (max-width:950px) and (min-width: 600px){
+  
+    #line{
+        color:green; 
+        font-size:17px;
+        width: 75%;
+    }
+    
+    .trying{
+        background-color: hsla(150, 100%, 85%, 0.39);
+        font-size: 27px; 
+        width: 75%;
+        padding: 20px 0px;
+    }
+    .trying1{
+        background-color: hsl(30, 50%, 70%, 0.39); 
+        font-size: 24px; 
+        width: 70%;
+    }
+}
+@media only screen and (max-width:800px) and (min-width: 0px){
+
+ 
+    #line{
+        color:green; 
+        font-size:15px;
+        width: 75%;
+    }
+    
+    
+    
+    .trying{
+        background-color: hsla(150, 100%, 85%, 0.39);
+        font-size: 20px; 
+        width: 75%;
+        padding: 20px 0px;
+    }
+    .trying1{
+        background-color: hsl(30, 50%, 70%, 0.39); 
+        font-size: 17px; 
+        width: 70%;
+    }
+}
