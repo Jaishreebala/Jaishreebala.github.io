@@ -90,11 +90,18 @@ function rotateProjectLeft(i) {
   console.log(project);
   manipulateData();
 }
-console.log(project);
+
 function generateLeftI() {
   if (i > 0) i--;
   else i = 3;
-  console.log(i);
+
   rotateProjectLeft(i);
 }
 document.getElementById("left-arrow").addEventListener("click", generateLeftI);
+
+// $(document).ready(function() {
+//   $(".gradient-box").mouseenter(function() {
+//     $(".gradient-box").append($("#link-description, #project-arrow "));
+//     $(".inner-gradient-box").fadeOut();
+//   });
+// });
