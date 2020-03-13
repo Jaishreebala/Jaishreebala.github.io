@@ -446,7 +446,7 @@ footer .text {
 }
 @media screen and (max-height: 550px) {
   body {
-    background-color: aqua;
+    /* background-color: aqua; */
   }
   .container-2 li {
     color: #22b2ea;
@@ -464,7 +464,7 @@ footer .text {
 }
 @media screen and (max-height: 500px) {
   body {
-    background-color: lavender;
+    /* background-color: lavender; */
   }
   .container-2 .text {
     font-size: 1.25rem;
@@ -473,7 +473,7 @@ footer .text {
 }
 @media screen and (max-height: 450px) {
   body {
-    background-color: palegreen;
+    /* background-color: palegreen; */
   }
   .container-2 li {
     padding-top: 1rem;
