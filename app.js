@@ -99,9 +99,38 @@ function generateLeftI() {
 }
 document.getElementById("left-arrow").addEventListener("click", generateLeftI);
 
-// $(document).ready(function() {
-//   $(".gradient-box").mouseenter(function() {
-//     $(".gradient-box").append($("#link-description, #project-arrow "));
-//     $(".inner-gradient-box").fadeOut();
-//   });
-// });
+window.addEventListener('resize', hideMenu);
+$(document).ready(function () {
+  $(".menu").click(function () {
+    if ($("header").attr('id') == "cross") {
+      $("header").removeAttr('id')
+      $(".links").hide();
+
+    }
+    else {
+      $('header').attr('id', 'cross');
+      $(".links").css({
+        "display": "flex",
+        "flex-direction": "column",
+        "width": "100%"
+      })
+    }
+  });
+})
+
+function hideMenu() {
+  if (window.innerWidth > 725 && $("header").attr('id') == "cross") {
+    $("header").removeAttr('id')
+    $(".links").hide();
+  }
+  if (window.innerWidth > 725 && $(".links").is(":visible") == false) {
+    $(".links").css({
+      "display": "flex",
+      "flex-direction": "row",
+      "width": "fit-content"
+    })
+  }
+  if (window.innerWidth < 725 && $("header").attr('id') != "cross") {
+    $(".links").hide();
+  }
+}

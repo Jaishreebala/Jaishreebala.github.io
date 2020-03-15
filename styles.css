@@ -52,13 +52,78 @@ header {
   position: sticky;
   top: 0;
   z-index: 2;
+  padding: 0 20px;
+}
+.logo{
+  width: calc(50%-20px);
+
 }
 .logo img {
   width: 2.5rem;
   height: 2.5rem;
 }
 
+.links{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  /* width: 75%; */
+}
+.menu{
+  display: none;
+/* width: calc(50% - 20px); */
+/* width: 50%; */
+/* background-color: aqua; */
+}
+
+/* .menu:hover > #menu #line-1
+{
+animation: menuAnim-1 2s ease forwards;
+}
+.menu:hover > #menu #line-3{
+  animation: menuAnim-3 2s ease forwards;
+
+}.menu:hover > #menu #line-2{
+  animation: menuAnim-2 0.1s ease forwards;
+
+} */
+@keyframes menuAnim-1{
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    transform-origin: center;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+  }
+}@keyframes menuAnim-2{
+  to {
+visibility: hidden;
+  }
+}@keyframes menuAnim-3{
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    transform-origin: center;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+  }
+}
+#cross{
+  height: 200px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: "100%"
+}
 .links span {
+  width: fit-content;
   padding: 5px 10px;
 }
 
@@ -372,15 +437,32 @@ footer .text {
     height: 1.5rem;
   }
 }
+/* @media screen and (min-width: 726px){
+  .links{
+    display: flex;
+    flex-direction: row;
+  }
+} */
 @media screen and (max-width: 725px) {
   #name {
     height: 4rem;
   }
+  .logo img{
+    height: 1.75rem;
+    width: 1.75rem;
+  }
+.menu{
+  display: flex;
+}
+.links{
+  display: none;
+}
   body {
     font-size: 8px;
   }
   header {
     font-size: 1rem;
+    padding: 010px;
   }
   .container-3 .title {
     font-size: 1.5rem;
@@ -460,6 +542,7 @@ footer .text {
     font-size: 1.25rem;
     padding: 1rem 0 0 0;
   }
+
 }
 @media screen and (max-height: 450px) {
   .container-2 li {
