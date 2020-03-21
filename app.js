@@ -104,11 +104,14 @@ $(document).ready(function () {
   $(".menu").click(function () {
     if ($("header").attr('id') == "cross") {
       $("header").removeAttr('id')
+      $(".menu").removeClass('open')
+
       $(".links").hide();
 
     }
     else {
       $('header').attr('id', 'cross');
+      $('.menu').addClass('open');
       $(".links").css({
         "display": "flex",
         "flex-direction": "column",
@@ -121,6 +124,7 @@ $(document).ready(function () {
 function hideMenu() {
   if (window.innerWidth > 725 && $("header").attr('id') == "cross") {
     $("header").removeAttr('id')
+    $(".menu").removeClass('open')
     $(".links").hide();
   }
   if (window.innerWidth > 725 && $(".links").is(":visible") == false) {
@@ -132,5 +136,6 @@ function hideMenu() {
   }
   if (window.innerWidth < 725 && $("header").attr('id') != "cross") {
     $(".links").hide();
+    $(".menu").removeClass('open')
   }
 }

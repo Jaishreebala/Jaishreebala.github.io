@@ -71,50 +71,49 @@ header {
 }
 .menu{
   display: none;
-/* width: calc(50% - 20px); */
-/* width: 50%; */
-/* background-color: aqua; */
+}
+.line {
+  width: 20px;
+  background: linear-gradient(123.42deg, #22B2EA 0%, #FF88FF 97.32%);
+  height: 1px;
+  position: absolute;
 }
 
-/* .menu:hover > #menu #line-1
-{
-animation: menuAnim-1 2s ease forwards;
+
+.line::after,
+.line::before {
+  content: "";
+  width: 20px;
+  background: linear-gradient(123.42deg, #22B2EA 0%, #FF88FF 97.32%);
+  height: 1px;
+  position: absolute;
 }
-.menu:hover > #menu #line-3{
-  animation: menuAnim-3 2s ease forwards;
 
-}.menu:hover > #menu #line-2{
-  animation: menuAnim-2 0.1s ease forwards;
+.line::after {
+  transform: translateY(5px);
 
-} */
-@keyframes menuAnim-1{
-  from {
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-  }
-  to {
-    transform-origin: center;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-  }
-}@keyframes menuAnim-2{
-  to {
-visibility: hidden;
-  }
-}@keyframes menuAnim-3{
-  from {
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-  }
-  to {
-    transform-origin: center;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-  }
+}
+
+
+.line::before {
+  transform: translateY(-5px);
+}
+
+.open .line::before {
+  transform: rotate(-45deg);
+  transition: 0.5s;
+
+}
+
+.open .line::after {
+  transform: rotate(45deg);
+  transition: 0.5s;
+
+}
+
+.open .line {
+  background: transparent;
+  transition: 0.5s;
 }
 #cross{
   height: 200px;
@@ -452,7 +451,14 @@ footer .text {
     width: 1.75rem;
   }
 .menu{
+
+
+  position: relative;
+  width: 30px;
+  height: 30px;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .links{
   display: none;
