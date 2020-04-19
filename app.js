@@ -17,35 +17,67 @@ let projectList = {
     projectStatus: "Status:  Front End Complete",
     linkDescription: "Visit Demo Website",
     projectDescription:
-      "Mental health is very important in this fast paced world. Inner peace is a web application that allows the user to track their mood every day and recieve monthly reports based on the user’s input."
+      "Mental health is very important in this fast paced world. Inner peace is a web application that allows the user to track their mood every day and recieve monthly reports based on the user’s input.",
+    projectLink: "http://jaishreebala.com/Inner-Peace/demosite.html"
   },
   project2: {
     id: 1,
+    imageUrl: "./MemoryGame.png",
+    projectTitle: "Memory Game",
+    projectStatus: "Status:  Complete",
+    linkDescription: "Play Game",
+    projectDescription:
+      "Match up the same cards to win! Three wrong guesses and you lose :( There’s also themes to choose from - Friends/Harry Potter/How I Met Your Mother",
+    projectLink: "http://jaishreebala.com/memory-game/"
+
+  },
+  project3: {
+    id: 2,
+    imageUrl: "./ToDoList.png",
+    projectTitle: "To Do List",
+    projectStatus: "Status:  Complete",
+    linkDescription: "Use Application",
+    projectDescription:
+      "Animated to do list, that makes completing work fun! It also has a filter option, making it a great way to keep track of work completed / work left for the day. The items on list gets saved, in the browser’s local storage.",
+    projectLink: "https://jaishreebala.com/todo-list/"
+
+  },
+  project4: {
+    id: 3,
     imageUrl: "./musicmaker.png",
     projectTitle: "Music Maker",
     projectStatus: "Status:  90% complete",
     linkDescription: "Try It Now",
     projectDescription:
-      "I have a huge passion for music and I love web developing. So I combined my passions and decided to create a web app for drums & piano."
+      "I have a huge passion for music and I love web developing. So I combined my passions and decided to create a web app for drums & piano.",
+    projectLink: "http://jaishreebala.com/Inner-Peace/demosite.html"
+
   },
-  project3: {
-    id: 2,
+
+  project5: {
+    id: 4,
     imageUrl: "./snakegame.png",
     projectTitle: "Snake Game",
     projectStatus: "Status: Complete",
     linkDescription: "Play Game",
     projectDescription:
-      "Does the age old snake game need an introduction? This was the first game I created, using vanilla Javascript, HTML and CSS."
+      "Does the age old snake game need an introduction? This was the first game I created, using vanilla Javascript, HTML and CSS.",
+    projectLink: "https://jaishreebala.com/Snake-Game/"
+
   },
-  project4: {
-    id: 3,
+  project6: {
+    id: 5,
     imageUrl: "./oldportfolio.png",
     projectTitle: "Old Portfolio",
     projectStatus: "Status:  Complete",
     linkDescription: "Visit Website",
     projectDescription:
-      "Keeping track of my progress really motivates me - this was the first website I created."
+      "Keeping track of my progress really motivates me - this was the first website I created.",
+    projectLink: "https://jaishreebala.com/Portfolio2019/"
+
   }
+
+
 };
 function manipulateData() {
   document.getElementById("project-image").src = project.imageUrl;
@@ -55,6 +87,7 @@ function manipulateData() {
     project.projectDescription;
   document.getElementById("link-description").innerHTML =
     project.linkDescription;
+  document.getElementById("project-link").href = project.projectLink;
 }
 //code for Right
 function rotateProjectRight(i) {
@@ -70,7 +103,7 @@ function rotateProjectRight(i) {
 console.log(project);
 var i = 0;
 function generateRightI() {
-  if (i < 3) i++;
+  if (i < 5) i++;
   else i = 0;
   console.log(i);
   rotateProjectRight(i);
@@ -93,7 +126,7 @@ function rotateProjectLeft(i) {
 
 function generateLeftI() {
   if (i > 0) i--;
-  else i = 3;
+  else i = 5;
 
   rotateProjectLeft(i);
 }
