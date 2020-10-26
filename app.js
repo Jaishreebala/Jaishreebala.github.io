@@ -12,13 +12,15 @@ let project = {
 let projectList = {
   project1: {
     id: 0,
-    imageUrl: "./innerpeace.png",
-    projectTitle: "Inner Peace",
-    projectStatus: "Status:  Front End Complete",
-    linkDescription: "Visit Demo Website",
+    imageUrl: "./quickCheck.png",
+    projectTitle: "QuickCheck",
+    projectStatus: "Status:  Complete",
+    linkDescription: "Try It Now",
     projectDescription:
-      "Mental health is very important in this fast paced world. Inner peace is a web application that allows the user to track their mood every day and recieve monthly reports based on the user’s input.",
-    projectLink: "http://jaishreebala.com/Inner-Peace/demosite.html"
+      "QuickCheck is an online symptom checker that allows users to receive a preliminary diagnosis, based on the symptoms they report from the comfort of their home. ",
+    projectLink: "https://jaishreebala.com/QuickCheck/"
+
+
   },
   project2: {
     id: 1,
@@ -44,12 +46,12 @@ let projectList = {
   },
   project4: {
     id: 3,
-    imageUrl: "./musicmaker.png",
-    projectTitle: "Music Maker",
-    projectStatus: "Status:  90% complete",
-    linkDescription: "Try It Now",
+    imageUrl: "./innerpeace.png",
+    projectTitle: "Inner Peace",
+    projectStatus: "Status:  Front End Complete",
+    linkDescription: "Visit Demo Website",
     projectDescription:
-      "I have a huge passion for music and I love web developing. So I combined my passions and decided to create a web app for drums & piano.",
+      "Mental health is very important in this fast paced world. Inner peace is a web application that allows the user to track their mood every day and recieve monthly reports based on the user’s input.",
     projectLink: "http://jaishreebala.com/Inner-Peace/demosite.html"
 
   },
