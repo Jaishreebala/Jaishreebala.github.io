@@ -138,8 +138,7 @@ main {
   border-radius: 1rem;
   width: 90%;
   height: var(--height);
-  margin: 1rem;
-  padding: 1rem;
+  margin: 0.5rem;
   transition: 0.5s;
   display: flex;
   flex-direction: row;
@@ -148,20 +147,17 @@ main {
 #work .work-card:hover {
   background-color: white;
 }
-#work .work-card img {
-  height: calc(var(--height) - 2rem);
-}
+
 #work .work-card .work-desc {
-  padding: 0 1rem;
+  padding: 1rem 1rem;
   width: 100%;
-}
-.work-card:nth-child(1) {
-  height: calc(var(--height) + 4rem) !important;
+  padding-left: 0rem;
 }
 .work-desc h1 {
   display: flex;
   justify-content: space-between;
   font-size: 1.15rem;
+  padding-left: 1rem;
 }
 .work-desc h1 .date {
   font-weight: 300;
@@ -174,6 +170,44 @@ main {
 .work-desc ul {
   list-style-position: inside;
 }
+.work-skills{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  /* height: var(--height); */
+  /* padding: 1rem 1rem; */
+}
+.work-skill{
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  margin: 0.25rem;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
+.ws1{
+  background-color: #F9AD44;
+}
+.ws2{
+  background-color: #986FD8;
+}
+.ws3{
+  background-color: #653FC6;
+}
+.work-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 5rem;
+  padding-left: 0.5rem;
+}
+.work-images img{
+  height: 100%;
+  width: 100%;
+}
+
 /* project page styles */
 #projects {
   background: linear-gradient(
@@ -533,6 +567,15 @@ main {
   #work .right {
     padding-bottom: 0.5rem;
   }
+  .work-skill{
+    padding: 0.3rem 0.3rem;
+    border-radius: 0.3rem;
+    margin: 0.2rem;
+    font-size: 0.7rem;
+  }
+  .work-desc h1 {
+    padding-left: 0.2rem;
+  }
 }
 
 @media screen and (max-width: 686px) {
@@ -594,6 +637,18 @@ main {
   }
   #work img {
     height: 5rem !important;
+  }
+  .work-skill{
+    padding: 0.3rem 0.3rem;
+    border-radius: 0.3rem;
+    margin: 0.2rem;
+    font-size: 0.5rem;
+  }
+  .work-desc h1 {
+    padding-left: 0.2rem;
+  }
+  .work-images{
+    width: 4rem;
   }
 }
 /* for touch screens */
