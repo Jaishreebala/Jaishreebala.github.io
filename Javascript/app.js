@@ -6,10 +6,12 @@ const swipeText = document.querySelector(".text");
 const logo = document.querySelector(".logo img");
 const burger = document.querySelector(".hamburger");
 let swipeTextList = [
-  "Full Stack Web developer",
-  "Game Development Enthusiast",
-  "Data Science Enthusiast",
-  "UI/UX Designer",
+  "Software Developer",
+  "Web Developer",
+  "Machine Learning Developer",
+  "Data Scientist"
+  
+  
 ];
 let countText = 1;
 let delayCounter = 0;
